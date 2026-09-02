@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vyroz — Уебсайтове, които превръщат посетителите в клиенти</title>
+<meta name="description" content="Vyroz Web Studio създава модерни и функционални уебсайтове — от бизнес сайтове и лендинг страници до онлайн магазини. Ясна структура, силен дизайн и конкретна цел.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" type="image/x-icon" href="/favicon/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon/android-chrome-192x192.png">
+<link rel="icon" type="image/png" sizes="512x512" href="/favicon/android-chrome-512x512.png">
+<link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+
+<div class="preloader" id="preloader" aria-hidden="true">
+  <div class="preloader-half preloader-half--left"></div>
+  <div class="preloader-half preloader-half--right"></div>
+  <div class="preloader-content">
+    <div class="preloader-stage preloader-stage--text">
+      <span class="preloader-word">
+        <span class="preloader-letter">V</span><span class="preloader-letter">y</span><span class="preloader-letter">r</span><span class="preloader-letter">o</span><span class="preloader-letter">z</span>
+      </span>
+    </div>
+    <div class="preloader-stage preloader-stage--icon">
+      <svg class="preloader-mark" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+        <path d="M 6,14 L 18,46 L 30,14 M 34,14 L 58,14 L 34,46 L 58,46" fill="none" stroke="#0A0A0A" stroke-width="2" vector-effect="non-scaling-stroke" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+  </div>
+</div>
+
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#" class="nav-logo">
+      <span class="nav-logo-word">Vyroz</span>
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="#services" class="nav-link">Услуги</a></li>
+      <li><a href="#why-vyroz" class="nav-link">Защо Vyroz</a></li>
+      <li><a href="#process" class="nav-link">Процес</a></li>
+      <li><a href="#pricing" class="nav-link">Цени</a></li>
+      <li><a href="#faq" class="nav-link">Въпроси</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <ul class="nav-social">
+        <li><a href="https://www.instagram.com/vyrozwebstudio/" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.6"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor"/></svg>
+        </a></li>
+        <li><a href="https://www.tiktok.com/@vyrozwebstudio" target="_blank" rel="noopener" aria-label="TikTok">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16 3c.3 2.1 1.6 3.6 4 3.8v2.8c-1.4.1-2.7-.3-4-1.1v6.4c0 3.4-2.7 5.6-5.7 5.6-2.9 0-5.6-2.1-5.6-5.5 0-3.5 3-5.9 6.4-5.5v2.9c-.3-.1-.6-.1-.9-.1-1.4 0-2.6 1.1-2.6 2.6 0 1.6 1.2 2.7 2.6 2.7 1.6 0 2.9-1.2 2.9-3V3h2.9z" fill="currentColor"/></svg>
+        </a></li>
+      </ul>
+
+      <a href="#quote" class="btn btn-primary btn-nav">Получи оферта</a>
+    </div>
+
+    <button class="nav-burger" id="navBurger" aria-label="Отвори меню">
+      <span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <ul>
+    <li><a href="#services">Услуги</a></li>
+    <li><a href="#why-vyroz">Защо Vyroz</a></li>
+    <li><a href="#process">Процес</a></li>
+    <li><a href="#pricing">Цени</a></li>
+    <li><a href="#faq">Въпроси</a></li>
+  </ul>
+  <a href="#quote" class="btn btn-primary">Получи оферта</a>
+</div>
+
+<header class="hero">
+  <div class="hero-inner">
+    <div class="hero-copy">
+      <p class="eyebrow">Vyroz Web Studio</p>
+
+      <h1 class="hero-headline" id="heroHeadline">
+        <span class="line"><span class="word">Уебсайтове,</span> <span class="word">които</span> <span class="word">превръщат</span></span>
+        <span class="line"><span class="word accent">посетителите</span> <span class="word accent">в</span> <span class="word accent">клиенти.</span></span>
+      </h1>
+
+      <p class="hero-sub">
+        Vyroz Web Studio създава <span class="hero-sub-accent">модерни</span> и
+        <span class="hero-sub-accent">функционални</span> уебсайтове — от
+        бизнес сайтове и лендинг страници до онлайн магазини. Всеки
+        проект е изграден с ясна структура, силен дизайн и конкретна
+        цел — да помага на бизнеса да расте.
+      </p>
+
+      <div class="hero-ctas">
+        <a href="#quote" class="btn btn-primary">Получи оферта <span class="arrow">→</span></a>
+        <a href="#pricing" class="btn btn-ghost">Виж цените</a>
+      </div>
+    </div>
+
+    <div class="hero-visual" aria-hidden="true">
+      <div class="hero-mockup-scale">
+      <svg class="hero-mockup-svg" viewBox="0 0 920 530" xmlns="http://www.w3.org/2000/svg">
+        <!-- LAPTOP: label -->
+        <text x="64" y="28" font-family="'JetBrains Mono', monospace" font-size="18" fill="#5B7332" letter-spacing="1">01 / ПО ПОРЪЧКА</text>
+
+        <!-- PHONE: label -->
+        <text x="635" y="28" font-family="'JetBrains Mono', monospace" font-size="18" fill="#5B7332" letter-spacing="1">02 / АДАПТИВЕН</text>
+
+        <!-- LAPTOP: ЕКРАН -->
+        <path
+          d="M 78,40
+             L 570,40
+             Q 584,40 584,54
+             L 584,378
+             L 64,378
+             L 64,54
+             Q 64,40 78,40
+             Z"
+          fill="none"
+          stroke="#5B7332"
+          stroke-width="1.5"
+        />
+
+        <!-- LAPTOP: browser chrome dots + разделителна линия -->
+        <circle cx="98" cy="60" r="3.5" fill="#5B7332" opacity="0.5" />
+        <circle cx="114" cy="60" r="3.5" fill="#5B7332" opacity="0.5" />
+        <circle cx="130" cy="60" r="3.5" fill="#5B7332" opacity="0.5" />
+        <line x1="64" y1="76" x2="584" y2="76" stroke="#5B7332" stroke-width="1.5" />
+
+        <!-- LAPTOP: съдържание -->
+        <rect x="106" y="102" width="60" height="7" fill="#5B7332" opacity="0.4" />
+        <rect x="106" y="132" width="308" height="20" fill="#1C2B18" />
+        <rect x="106" y="160" width="196" height="20" fill="#1C2B18" />
+        <line x1="106" y1="196" x2="480" y2="196" stroke="#5B7332" stroke-width="1.5" opacity="0.5" />
+        <line x1="106" y1="212" x2="380" y2="212" stroke="#5B7332" stroke-width="1.5" opacity="0.5" />
+        <rect x="106" y="242" width="130" height="28" fill="#7C9A4C" />
+
+        <!-- LAPTOP: база -->
+        <path
+          d="M 53,378
+             L 31,398
+             L 292,398
+             Q 324,392 356,398
+             L 617,398
+             L 595,378
+             Z"
+          fill="none"
+          stroke="#5B7332"
+          stroke-width="1.5"
+        />
+
+        <!-- PHONE: рамка (напълно заоблени ъгли) -->
+        <rect
+          x="635" y="40" width="185" height="380"
+          rx="24" ry="24"
+          fill="none"
+          stroke="#5B7332"
+          stroke-width="1.5"
+        />
+
+        <!-- PHONE: status bar горе -->
+        <rect x="700" y="58" width="55" height="6" rx="3" fill="#5B7332" opacity="0.5" />
+
+        <!-- PHONE: съдържание -->
+        <rect x="655" y="82" width="36" height="4" fill="#5B7332" opacity="0.4" />
+        <rect x="655" y="100" width="130" height="16" fill="#1C2B18" />
+        <rect x="655" y="122" width="90" height="16" fill="#1C2B18" />
+        <line x1="655" y1="150" x2="785" y2="150" stroke="#5B7332" stroke-width="1.5" opacity="0.5" />
+        <line x1="655" y1="162" x2="755" y2="162" stroke="#5B7332" stroke-width="1.5" opacity="0.5" />
+        <rect x="655" y="184" width="70" height="20" fill="#7C9A4C" />
+
+        <!-- PHONE: home indicator долу -->
+        <rect x="705" y="398" width="45" height="4" rx="2" fill="#5B7332" opacity="0.5" />
+
+        <!-- ДОЛЕН LABEL: "| ⚡ 03 / БЪРЗ" -->
+        <line x1="78" y1="450" x2="78" y2="472" stroke="#5B7332" stroke-width="1.5" opacity="0.6" />
+        <path
+          d="M 100,452 L 92,463 L 98,463 L 94,472 L 104,459 L 98,459 Z"
+          fill="none"
+          stroke="#5B7332"
+          stroke-width="1.3"
+        />
+        <text x="112" y="467" font-family="'JetBrains Mono', monospace" font-size="18" fill="#5B7332" letter-spacing="1">03 / БЪРЗ</text>
+      </svg>
+      </div>
+    </div>
+  </div>
+
+  <div class="feature-strip">
+    <span>ПРОЕКТИРАН ПО МЯРКА</span><span class="dash">/</span>
+    <span>ПЪЛНА АДАПТИВНОСТ</span><span class="dash">/</span>
+    <span>SEO ОСНОВА</span><span class="dash">/</span>
+    <span>ИЗМЕРЕНА СКОРОСТ</span><span class="dash">/</span>
+    <span>БЕЗ ПОСРЕДНИЦИ</span>
+  </div>
+</header>
+
+<!-- ============ УСЛУГИ ============ -->
+<section class="section" id="services">
+  <div class="section-inner reveal">
+    <p class="section-eyebrow">— УСЛУГИ</p>
+    <div class="section-head">
+      <h2 class="section-h2">Четири инструмента. Всеки с точна задача.</h2>
+    </div>
+
+    <div class="services stagger-group">
+      <a href="#quote" class="service-row">
+        <span class="service-num">01</span>
+        <span class="service-main">
+          <span class="service-title">Изработка на сайт</span>
+          <span class="service-desc">Пълен уебсайт от нулата — от идея до пусната онлайн версия.</span>
+        </span>
+      </a>
+      <a href="#quote" class="service-row">
+        <span class="service-num">02</span>
+        <span class="service-main">
+          <span class="service-title">Уеб дизайн</span>
+          <span class="service-desc">Само визуалната част — UI/UX дизайн, ако вече имаш разработчик или ти трябва само макет.</span>
+        </span>
+      </a>
+      <a href="#quote" class="service-row">
+        <span class="service-num">03</span>
+        <span class="service-main">
+          <span class="service-title">Уеб разработка</span>
+          <span class="service-desc">Превръщаме готов дизайн — твой или наш — в реален, работещ сайт.</span>
+        </span>
+      </a>
+      <a href="#quote" class="service-row">
+        <span class="service-num">04</span>
+        <span class="service-main">
+          <span class="service-title">Лендинг страници</span>
+          <span class="service-desc">Единична страница за конкретна кампания, продукт или реклама.</span>
+        </span>
+      </a>
+    </div>
+
+    <p class="services-footer">Не си сигурен откъде да започнеш? <a href="#quote">Ще обсъдим подходящия подход →</a></p>
+  </div>
+</section>
+
+<!-- ============ ЗАЩО VYROZ ============ -->
+<section class="section section-dark" id="why-vyroz">
+  <div class="section-inner reveal why-grid">
+    <div class="why-left">
+      <p class="section-eyebrow">— ЗАЩО VYROZ</p>
+      <h2 class="section-h2">Всеки <span class="accent">детайл</span> има причина да съществува.</h2>
+      <p class="section-lead">Никой елемент не е поставен „защото изглежда добре". Дизайнът следва логика — от структурата до последния бутон.</p>
+    </div>
+
+    <div class="why-right">
+      <div class="why-item">
+        <span class="why-num-wrap"><span class="why-tick"></span><span class="why-num">01</span></span>
+        <div>
+          <h3 class="why-title">Без готови шаблони</h3>
+          <p class="why-text">Всеки сайт се проектира от нулата, съобразен с конкретния бизнес.</p>
+        </div>
+      </div>
+      <div class="why-item">
+        <span class="why-num-wrap"><span class="why-tick"></span><span class="why-num">02</span></span>
+        <div>
+          <h3 class="why-title">Един човек, целия процес</h3>
+          <p class="why-text">Говориш директно с мен, от първия разговор до последния ред код.</p>
+        </div>
+      </div>
+      <div class="why-item">
+        <span class="why-num-wrap"><span class="why-tick"></span><span class="why-num">03</span></span>
+        <div>
+          <h3 class="why-title">Измерима цел</h3>
+          <p class="why-text">Всеки елемент има причина да е там — не просто „изглежда добре".</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ДИРЕКТНА КОМУНИКАЦИЯ ============ -->
+<section class="section" id="direct-communication">
+  <div class="section-inner reveal">
+    <div class="direct-comm">
+      <div class="direct-comm-inner">
+        <h2 class="direct-comm-title">Работиш директно с мен — не с екип, не с абонамент за агенция.</h2>
+        <p class="direct-comm-text">Пишеш директно на мен — от първото съобщение до публикувания сайт. Никой не препраща въпроса ти на „колега".</p>
+      </div>
+      <span class="bracket bracket-tl"></span>
+      <span class="bracket bracket-tr"></span>
+      <span class="bracket bracket-bl"></span>
+      <span class="bracket bracket-br"></span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ КАК ПРОТИЧА ============ -->
+<section class="section" id="process">
+  <div class="section-inner reveal">
+    <p class="section-eyebrow">— КАК ПРОТИЧА</p>
+    <div class="section-head">
+      <h2 class="section-h2">От първото съобщение до готовия сайт.</h2>
+      <p class="section-lead">Ясен процес, без излишни срещи. Пишеш директно с човека, който изгражда сайта ти — от идеята до публикуването.</p>
+    </div>
+
+    <div class="process-timeline">
+      <div class="process-step">
+        <span class="process-marker"></span>
+        <span class="process-num">01</span>
+        <h3 class="process-title">Разбирам бизнеса ти</h3>
+        <p class="process-text">Не питам само какъв сайт искаш. Разбирам бизнеса, целите ти и какво трябва да постигне сайтът.</p>
+      </div>
+      <div class="process-step">
+        <span class="process-marker"></span>
+        <span class="process-num">02</span>
+        <h3 class="process-title">Изграждам структурата</h3>
+        <p class="process-text">Преди дизайна идва стратегията. Подреждам страниците и съдържанието така, че всяко нещо да има причина.</p>
+      </div>
+      <div class="process-step">
+        <span class="process-marker"></span>
+        <span class="process-num">03</span>
+        <h3 class="process-title">Строя</h3>
+        <p class="process-text">Не просто макет — реален сайт. Изграждам и тествам всичко, за да работи както трябва.</p>
+      </div>
+      <div class="process-step">
+        <span class="process-marker"></span>
+        <span class="process-num">04</span>
+        <h3 class="process-title">Пускам и проверявам</h3>
+        <p class="process-text">Проверявам скорост, responsive поведение, форми и SEO основа.</p>
+        <p class="process-text">Сайтът не излиза „почти готов". <strong>Излиза готов.</strong></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ЦЕНИ ============ -->
+<section class="section" id="pricing">
+  <div class="section-inner reveal">
+    <p class="section-eyebrow">— ЦЕНИ</p>
+    <div class="section-head">
+      <h2 class="section-h2">Избери подходящия сайт за бизнеса си.</h2>
+      <p class="section-lead">Ясни начални цени. За по-специфични проекти подготвяме индивидуална оферта.</p>
+    </div>
+
+    <div class="pricing-grid">
+      <div class="price-card">
+        <p class="price-kicker">СТАРТОВА СТРАНИЦА <span class="price-kicker-en">/ Landing Page</span></p>
+        <p class="price-desc">За конкретна услуга, продукт или рекламна кампания.</p>
+        <p class="price-amount">€299</p>
+        <p class="price-label">ЕДНОКРАТНА ЦЕНА</p>
+        <ul class="price-features">
+          <li>1 основна страница</li>
+          <li>Индивидуален дизайн</li>
+          <li>Адаптивен дизайн</li>
+          <li>Контактна форма</li>
+          <li>SEO основа</li>
+          <li>Оптимизация за скорост</li>
+          <li>CTA / conversion структура</li>
+        </ul>
+        <a href="#quote" class="btn btn-ghost btn-full">Получи оферта</a>
+      </div>
+
+      <div class="price-card price-card--featured">
+        <p class="price-kicker">ЗА БИЗНЕСИ <span class="price-kicker-en">/ Business Website</span></p>
+        <p class="price-desc">За бизнес, който има нужда от цялостно професионално онлайн присъствие.</p>
+        <p class="price-amount">€499</p>
+        <p class="price-label">ЕДНОКРАТНА ЦЕНА</p>
+        <ul class="price-features">
+          <li>4–6 основни страници</li>
+          <li>Индивидуален дизайн</li>
+          <li>Адаптивен дизайн</li>
+          <li>Представяне на услуги</li>
+          <li>Галерия / Portfolio</li>
+          <li>Допълнителни секции</li>
+          <li>Контактна форма</li>
+          <li>SEO основа</li>
+          <li>Оптимизация за скорост</li>
+          <li>CTA / conversion структура</li>
+        </ul>
+        <a href="#quote" class="btn btn-primary btn-full">Получи оферта</a>
+      </div>
+
+      <div class="price-card">
+        <p class="price-kicker">РАЗШИРЕН ПРОЕКТ <span class="price-kicker-en">/ Business Pro</span></p>
+        <p class="price-desc">За по-големи сайтове и по-сложни бизнес нужди.</p>
+        <p class="price-amount">€799</p>
+        <p class="price-label">ЕДНОКРАТНА ЦЕНА</p>
+        <ul class="price-features">
+          <li>7–12+ страници</li>
+          <li>Представяне на услуги</li>
+          <li>Галерия / Portfolio</li>
+          <li>Допълнителни секции</li>
+          <li>Допълнителна функционалност</li>
+          <li>Интеграции</li>
+          <li>Персонализирани бизнес изисквания</li>
+          <li>CTA / conversion структура</li>
+        </ul>
+        <a href="#quote" class="btn btn-ghost btn-full">Получи оферта</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ОНЛАЙН МАГАЗИН ============ -->
+<section class="store">
+  <div class="section-inner reveal store-inner">
+    <div>
+      <p class="section-eyebrow section-eyebrow--dark">— ОНЛАЙН МАГАЗИН</p>
+      <h2 class="store-title">Онлайн магазин</h2>
+      <p class="store-text">За бизнеси, които продават продукти онлайн. Цената зависи от каталога, плащанията, доставките, интеграциите и необходимата функционалност.</p>
+      <a href="#quote" class="btn btn-primary">Получи индивидуална оферта</a>
+    </div>
+    <div class="store-price">
+      <span class="store-price-label">от</span>
+      <span class="store-price-amount">€1,000</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ВЪПРОСИ ============ -->
+<section class="section" id="faq">
+  <div class="section-inner reveal">
+    <p class="section-eyebrow">— ВЪПРОСИ</p>
+    <h2 class="section-h2 section-h2--faq">Често задавани въпроси.</h2>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>Какъв тип сайтове изработвате?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Бизнес сайтове, landing pages и онлайн магазини. Не правя блогове, форуми или сложни уеб приложения — фокусът е върху сайтове, които продават или представят бизнес.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>Колко струва изработката на сайт?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>От €299 за лендинг страница до €799+ за разширен проект. Онлайн магазините тръгват от €1,000. Точната цена зависи от обхвата.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>Колко време отнема?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Между 2 и 3 седмици, в зависимост от обхвата на проекта — landing page отнема по-малко, разширен бизнес сайт или онлайн магазин естествено малко повече.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>Ще работи ли сайтът добре на телефон?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Да — всеки сайт се проектира първо за телефон, после за desktop, не обратното. Повечето ти клиенти вероятно те намират през телефона си.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>Можете ли да направите редизайн?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Да. Ако имаш стар сайт, който вече не отговаря на бизнеса ти, работя както с пълен redesign, така и с частична преработка — зависи от това какво реално не работи в текущия.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>Какво се случва след запитване?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Свързвам се с теб в рамките на 24 часа за кратък разговор — искам да разбера какво точно ти трябва, преди да ти дам конкретна оферта. Никакви автоматични имейли, никакво чакане с дни.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FINAL CTA ============ -->
+<section class="section final-cta" id="quote">
+  <div class="section-inner reveal final-cta-inner">
+    <div class="final-cta-left">
+      <p class="section-eyebrow">— ЗАПОЧНИ ОТТУК</p>
+      <h2 class="section-h2">Кажи ми какво искаш да постигнеш.</h2>
+      <p class="final-cta-text">Кратко описание е достатъчно — останалото изясняваме на разговора, не през формуляр.</p>
+      <p class="final-cta-note">Безплатна първоначална консултация.</p>
+    </div>
+
+    <div class="final-cta-right">
+      <form class="quote-form" id="quoteForm" action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="ae0c1fa9-cc19-4363-94ec-b678c207cf55">
+        <div class="form-grid">
+          <div class="form-field">
+            <div class="form-field-label-row">
+              <span class="form-field-num">01</span>
+              <label for="qf-name">Име</label>
+            </div>
+            <input type="text" id="qf-name" name="Име" autocomplete="name" required>
+          </div>
+          <div class="form-field">
+            <div class="form-field-label-row">
+              <span class="form-field-num">02</span>
+              <label for="qf-contact">Имейл или телефон</label>
+            </div>
+            <input type="text" id="qf-contact" name="Имейл_или_телефон" required>
+          </div>
+          <div class="form-field">
+            <div class="form-field-label-row">
+              <span class="form-field-num">03</span>
+              <label for="qf-type">Тип сайт</label>
+            </div>
+            <select id="qf-type" name="Тип_сайт" required>
+              <option value="" disabled selected>Избери вариант</option>
+              <option value="landing">Landing page</option>
+              <option value="business">Business Website</option>
+              <option value="business-pro">Business Pro</option>
+              <option value="store">Онлайн магазин</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <div class="form-field-label-row">
+              <span class="form-field-num">04</span>
+              <label for="qf-site">Сайт или социален профил (по избор)</label>
+            </div>
+            <input type="text" id="qf-site" name="Сайт_или_профил" placeholder="напр. instagram.com/example">
+          </div>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="btn btn-primary">Получи безплатна оферта <span class="arrow">→</span></button>
+          <p class="form-legal">С изпращането на формата потвърждавате, че сте запознати с <a href="privacy.html" class="form-legal-link">Политиката за поверителност</a>.</p>
+          <p class="form-success" id="quoteFormSuccess" hidden>Благодаря! Ще се свържа с теб в рамките на 24ч.</p>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer-bottom">
+  <div class="footer-inner">
+    <a href="#" class="nav-logo footer-logo">
+      <span class="nav-logo-word">Vyroz</span>
+    </a>
+
+    <div class="footer-actions">
+      <ul class="footer-links">
+        <li><a href="#services">Услуги</a></li>
+        <li><a href="#why-vyroz">Защо Vyroz</a></li>
+        <li><a href="#process">Процес</a></li>
+        <li><a href="#pricing">Цени</a></li>
+        <li><a href="#faq">Въпроси</a></li>
+      </ul>
+
+      <ul class="footer-social">
+      <li><a href="https://www.instagram.com/vyrozwebstudio/" target="_blank" rel="noopener" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.6"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor"/></svg>
+      </a></li>
+      <li><a href="https://www.tiktok.com/@vyrozwebstudio" target="_blank" rel="noopener" aria-label="TikTok">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16 3c.3 2.1 1.6 3.6 4 3.8v2.8c-1.4.1-2.7-.3-4-1.1v6.4c0 3.4-2.7 5.6-5.7 5.6-2.9 0-5.6-2.1-5.6-5.5 0-3.5 3-5.9 6.4-5.5v2.9c-.3-.1-.6-.1-.9-.1-1.4 0-2.6 1.1-2.6 2.6 0 1.6 1.2 2.7 2.6 2.7 1.6 0 2.9-1.2 2.9-3V3h2.9z" fill="currentColor"/></svg>
+      </a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-legal-row">
+    <div class="footer-legal-inner">
+      <p class="footer-copy">© 2026 Vyroz. Всички права запазени.</p>
+      <ul class="footer-legal">
+        <li><a href="privacy.html">Политика за поверителност</a></li>
+        <li><a href="cookies.html">Политика за бисквитките</a></li>
+        <li><a href="terms.html">Общи условия</a></li>
+        <li><a href="#" data-cookie-settings-trigger>Настройки на бисквитките</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<div class="cookie-modal-overlay" id="cookieModalOverlay">
+  <div class="cookie-modal" role="dialog" aria-modal="true" aria-labelledby="cookieModalTitle">
+    <button type="button" class="cookie-modal-close" id="cookieModalClose" aria-label="Затвори">×</button>
+    <h2 class="cookie-modal-title" id="cookieModalTitle">Настройки на бисквитките</h2>
+
+    <div class="cookie-category">
+      <div class="cookie-category-head">
+        <span class="cookie-category-title">Необходими</span>
+        <span class="cookie-status">Винаги активни</span>
+      </div>
+      <p class="cookie-category-desc">Необходимите бисквитки осигуряват основната функционалност на сайта.</p>
+    </div>
+
+    <div class="cookie-category">
+      <div class="cookie-category-head">
+        <span class="cookie-category-title">Аналитични</span>
+        <label class="cookie-toggle">
+          <input type="checkbox" id="cookieConsentAnalytics">
+          Разрешавам
+        </label>
+      </div>
+      <p class="cookie-category-desc">Помагат ни да измерваме посещенията и използването на сайта.</p>
+    </div>
+
+    <div class="cookie-category">
+      <div class="cookie-category-head">
+        <span class="cookie-category-title">Маркетингови</span>
+        <label class="cookie-toggle">
+          <input type="checkbox" id="cookieConsentMarketing">
+          Разрешавам
+        </label>
+      </div>
+      <p class="cookie-category-desc">Използват се за измерване и подобряване на рекламни кампании.</p>
+    </div>
+
+    <div class="cookie-modal-actions">
+      <button type="button" class="btn btn-ghost" id="cookieSaveChoice">Запази избора</button>
+      <button type="button" class="btn btn-primary" id="cookieAcceptAll">Приеми всички</button>
+    </div>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
